@@ -22,7 +22,7 @@ jobs:
       - name: Prepare public files
         run: |
           mkdir public-site
-          cp index.html styles.css script.js portfolio.html portfolio.css portfolio.js public-site/
+          cp index.html styles.css script.js portfolio.html portfolio.css portfolio.js ai-development.html ai-development.css public-site/
           cp -r assets public-site/assets
           touch public-site/.nojekyll
       - uses: actions/upload-pages-artifact@v3
@@ -31,3 +31,4 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
+
